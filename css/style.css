@@ -1,0 +1,123 @@
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat:300');*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+}
+
+/* Starting with the NavBar*/
+.navbar{
+    border-bottom: 2px solid #17dd42;
+	display: flex;
+	justify-content: space-between;
+}
+.navbar img{
+	padding-left: 1.5%;
+	/border: 1px solid white;
+	position: relative;
+	align-self: center;
+	padding-bottom: .5vw;
+	padding-top: .5vw;
+    /margin-left: 45%;
+    width: 8vw;
+	height: 8vw;
+}
+.navbar ul{
+	align-self: flex-end;
+	position: relative;
+	right: 4%;
+	display: flex;
+    vertical-align: bottom;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.navbar li{
+	align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    /margin-bottom: 2%;
+	display: flex;
+	justify-content: center;
+	/width: 120p;
+	/height: 50px;
+	padding: 1.1em;
+	padding-bottom: .5em;
+	line-height: 50px;
+	font-size: 1.2em;
+	/border-bottom: 2px solid #17dd42;
+	position: relative;
+}
+.navbar a{
+    text-decoration: none;
+    color: #17dd42;
+    display: block;
+}
+/*
+    .navbar li:hover{
+        /border-bottom: 2px solid #222;
+    }
+*/
+    .navbar li.active{
+        /border-bottom: 2px solid #222;
+    }
+	.div1:after{
+		transition: .2s;
+		transition-timing-function: ease-out;
+		content: '';
+		left: 0em;
+		background: #222;
+		width: 120%;
+		position: absolute;
+		height: 2px;
+		top: 100%;
+	}
+	.div2:after{
+		left: 6em;
+		width: 6em;
+	}
+	.div3:after{
+		left: 13em;
+		width: 6em;
+	}
+	.div4:after{
+		left: 20em;
+		width: 7em;
+	}
+
+@media screen and (min-width: 481px){
+/*
+    .navbar img{
+        margin-left: 4%;
+        width: 5%;
+    }
+*/
+
+}
+
+
+@media screen and (max-width: 480px){
+    .navbar{
+        border-bottom: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: auto;
+    }
+	.navbar img{
+		align-self: center;
+		margin: 0;
+	}
+    .navbar ul{
+        display: flex;
+		flex-direction: row;
+		/border: 1px solid white;
+		justify-content: center;
+		min-height: 3em;
+    }
+	.navbar li{
+		align-self: center;
+	}
+}
+/*Finished styling the NavBar*/
