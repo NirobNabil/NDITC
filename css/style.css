@@ -99,15 +99,16 @@ body{
 
 @media screen and (max-width: 480px){
     .navbar{
-        border-bottom: none;
+        /border-bottom: none;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		flex-direction: row;
+		justify-content: space-between;
 		height: auto;
     }
 	.navbar img{
+		width: 4em;
+		height: 4em;
 		align-self: center;
-		margin: 0;
 	}
     .navbar ul{
         display: flex;
@@ -115,8 +116,11 @@ body{
 		/border: 1px solid white;
 		justify-content: center;
 		min-height: 3em;
+		align-self: center;
     }
 	.navbar li{
+		font-size: .7em;
+		padding: .2em;
 		align-self: center;
 	}
 }
